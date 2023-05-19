@@ -24,7 +24,7 @@ const object = new Example("Pedro", 26);
 ## Subclasses
 Subclasses are classes that inherit different properties. They use the ```extends``` keyword to know form which class they will inherit their properties and methods. And inside our body constructor we add the ```super``` keyword to now which attributes to share.
 
-### Example:
+#### Example:
 ```
 class Sheppard extends Dog{
     constructor(name, years, color)
@@ -41,3 +41,11 @@ class Sheppard extends Dog{
 Methods are functions that give functionality to our objects. They help us to 
 change or use our attributes and give output to our console or GUI.
 
+To add a method to our class, we need the `prototype` keyword follow by the method name and than we create a function.
+
+#### Example:
+```
+Dog.prototype.bark = function(){
+    console.log("WOF WOF"!)
+}
+```
